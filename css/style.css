@@ -1,0 +1,936 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------- End Reset ---------------*/
+
+/*---------------- General Style ---------------*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 30px; 
+    line-height: 35px;
+    text-align: center;
+}
+
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+section:first-child{
+    margin-top: 150px
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.heroText{
+    color: #74A7F3;
+    margin-top: 200px;
+}
+
+.btn{
+    display: block;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #74A7F3;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    color: #74A7F3;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+.dark{
+    background-color: #333;
+    color: #fff;
+}
+
+
+.padded{
+    width: 90%;
+    padding: 5%;
+}
+
+.padded.bottom{
+    padding: 5% 5% 200px;
+}
+
+strong{
+    font-weight: 400;
+}
+
+.bold{
+    font-weight: 400;
+}
+
+.white{
+    color: #fff;
+}
+
+.secondHeader{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.halfBox{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border: 3px solid #aaa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.halfBox img{
+    height: 140px;
+    margin: 20px 0px;
+}
+
+.halfGrid{
+    overflow: auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.halfGrid .btn{
+    margin-top: 20px;
+}
+
+.halfGrid .floatRight{
+    margin-top: 20px;
+}
+
+.thirdBox{
+    position: relative;
+    float: left;
+    width: 30%;
+    margin: 0px 1.5%;
+}
+
+.thirdBox h2{
+    text-align: left;
+    font-size: 22px;
+}
+
+.date_box{
+    border: 2px solid #74A7F3;
+    padding: 17px;
+    min-height: 280px;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.date_box.black{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+p{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.date_box h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.time{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.floatRight{
+    float: right;
+    clear: both;
+}
+
+.full{
+    width: 100%;
+}
+
+.blue{
+    color: #74A7F3;
+    border-color: #74A7F3;
+}
+
+/*---------------- Header ---------------*/
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 93px;
+    background-color: #fff;
+    z-index: 95;
+    overflow: hidden;
+    opacity: 0.99;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: -webkit-linear-gradient(left, #74ddad , #74a7f3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #74ddad, #74a7f3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #74ddad, #74a7f3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #74ddad , #74a7f3); /* Standard syntax */
+}
+
+.subheader{
+    position: absolute;
+    padding: 5px 0px 3px 0px;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    background-color: #D8D8D8;
+}
+
+.subheader h3{
+    color: #fff;
+    text-align: center;
+}
+.ticket{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 0px 20px;
+    line-height: 25px;
+    height: 100%;
+    background-color: #74A7F3;
+    color: #fff;
+    border: none;
+}
+
+.ticket:hover{
+    color: #74A7F3;
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
+.headerLogo{
+    position: absolute;
+    text-indent: -9999px;
+    background: url(../images/web_directions_logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 270px;
+    height: 70px;
+    top: 28px;
+    left: 20px;
+}
+
+nav{
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+
+nav li:first-child{
+    margin-left: 0px;
+}
+
+nav a{
+    color: #74A7F3;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    border-bottom: 20px solid rgba(116, 167, 243, 0);
+    transition: all 0.2s ease;
+    width: auto;
+    position: relative
+}
+
+nav a.active{
+    color: #fff;
+}
+
+.invis{
+    opacity: 0;
+}
+
+#underscore{
+    display: inline-block;
+}
+
+.subhead{
+    text-align: left;
+    color: #74A7F3;
+    line-height: 20px;
+    font-size: 13px !important;
+    letter-spacing: 3px !important;
+    font-weight: bold;
+}
+
+.subhead.text{
+    max-width: 550px;
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.copy{
+    max-width: 550px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+    color: #333;
+    line-height: 30px;
+    font-size: 17px;
+}
+
+nav a.active:after{
+    top: -4px;
+    left: -9px;
+    position: absolute;
+    content: '';
+    width: calc(100% + 18px);
+    height: 28px;
+    background-color: #74ddad;
+    z-index: -20;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(116, 167, 243, 1);
+}
+
+
+#menuIcon{
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 75px;
+    background-color: #74A7F3;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    z-index: 100;
+}
+
+#menuIcon:hover{
+    background-color: #5393f2;
+    cursor: pointer; 
+}
+
+#ham-toggle {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-top: -2px;
+    margin-left: -17px;
+}
+
+#ham-toggle:hover{
+    opacity: 1;
+}
+
+#ham-toggle {
+    cursor: pointer;
+}
+#ham-toggle span, #ham-toggle span:before, #ham-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#ham-toggle span:before {
+  top: -10px; 
+}
+#ham-toggle span:after {
+  bottom: -10px;
+}
+
+#ham-toggle span, #ham-toggle span:before, #ham-toggle span:after {
+  transition: all 250ms ease-in-out;
+}
+#ham-toggle.active span {
+  background-color: transparent;
+}
+
+#ham-toggle.active span:before {
+  transform: translateY(10px) rotate(135deg);
+}
+#ham-toggle.active span:after {
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+
+/*---------------- mobile nav ---------------*/
+
+#sideNav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 100%;
+    background-color: #fff;
+    z-index: 90;
+    transition: left 0.3s ease-in-out;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.sideNavActive{
+    left: 0% !important;
+}
+
+#sideNav li a{
+    text-align: center;
+    display:block;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #fff;
+    color: #74A7F3;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#sideNav li a:hover{
+    background-color: #eee;
+}
+
+#sideNav li:first-child{
+    margin-top: 90px;
+    border-top: 1px solid #eee;
+}
+
+#sideNav li:last-child{
+    font-size: 35px;
+}
+/*---------------- sections ---------------*/
+
+.heroBack{
+    position: fixed;
+    top: 90px;
+    height: calc(100% - 90px);    
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    transform: translateZ(0);
+}
+
+.fullscreen-bg__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.firstSection{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.index_hero1{
+    height: 500px;
+}
+
+.index_hero1 .btn{
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+.index_section3{
+    background-image:url(../images/index_section3.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.dates{
+    overflow: auto;
+    margin-top: 25px;
+}
+
+.moreLink{
+    color: #fff;
+    position: absolute;
+    letter-spacing: 1px;
+    font-weight: 400;
+    bottom: 15px;
+    right: 15px;
+}
+
+.newsletter{
+    float: left;
+    width: 90%;
+    padding: 40px 5%;
+    background-color: #74A7F3;
+}
+
+.newsletterText{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.newsletterText h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.newsletterInput{
+    margin: 0 auto 100px;
+    width: 522px;
+}
+
+.newsletterInput input[type=email]{
+    float: left;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+.newsletterInput input[type=submit]{
+    float: left;
+    border: none;
+    height: 32px;
+    font-size: 17px;
+    padding-top: 6px;
+    background-color: #DF6565;
+}
+
+.newsletterInput input[type=submit]:hover{
+    color: #DF6565;
+    background-color: #eee;
+}
+
+/*---------------- Forms ---------------*/
+
+.ticketForm{
+    clear: both;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.ticketForm input, .ticketForm textarea{
+    height: 25px;
+    font-size: 18px;
+    width: 44%;
+    margin: 10px 12px;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 3px solid #eee;
+    transition: all 200ms ease-in-out;
+}
+
+.ticketForm textarea{
+    width: 93%;
+    margin: 10px 24px;
+    background-color: #fafafa;
+    height: 150px;
+}
+
+.ticketForm input:invalid, .ticketForm textarea:invalid{
+    border-bottom: 3px solid #f37474;
+}
+
+.ticketForm input:required, .ticketForm textarea:required{
+    border-bottom: 3px solid #eee;
+}
+
+.ticketForm input:valid, .ticketForm textarea:valid{
+    border-bottom: 3px solid #74ddad;
+}
+.ticketForm input:focus, .ticketForm textarea:focus{
+    border-bottom: 3px solid #74A7F3;
+    outline: none;
+    box-shadow: none;
+}
+
+.ticketForm select{
+    width: 46%;
+    margin: 10px 12px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+}
+
+.ticketForm input[type=submit]{
+    float: right;
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    color: #74A7F3;
+    line-height: 0px;
+    border: 3px solid #74A7F3;
+}
+
+.ticketForm input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #74A7F3;
+    color: #fff;
+    border-color: #74A7F3;
+}
+
+.thanks{
+    height: 80vh;
+}
+
+.thanks img{
+    margin-top: 25px;
+}
+
+.thanks h2{
+    margin-top: 150px;
+}
+
+.confirmation{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, #74ddad , #74a7f3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #74ddad, #74a7f3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #74ddad, #74a7f3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #74ddad , #74a7f3); /* Standard syntax */
+    z-index: 50;
+    transition: all 300ms ease-in-out;
+    transform: translateY(100%);
+}
+
+.confirmation h1{
+    font-size: 90px;
+    display: block;
+    max-width: 70%;
+    margin: 45vh auto 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.confirmation p{
+    font-size: 20px;
+    display: block;
+    max-width: 70%;
+    margin: 60px auto 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+.confirmation a{
+    font-size: 15px;
+    display: block;
+    max-width: 70%;
+    margin: 60px auto 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.confirmation.active{
+    transform: translateY(0);
+}
+/*---------------- Footer ---------------*/
+
+footer{
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    background-color: #333;
+    height: 180px;
+    color: #aaa;
+}
+
+footer a{
+    color: #fff;
+}
+
+footer p{
+    line-height: 25px;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.thirdBox li{
+    display: inline;
+    float: left;
+    margin: 0px 4px;
+}
+
+.thirdBox li a{
+    font-size: 12px;
+}
+
+.thirdBox ul{
+    display: inline-block;
+}
+
+.sponsorList li{
+    margin: 20px;
+}
+
+.sponsorList img{
+    width: 100%;
+}
+
+/*---------------- Media Queries ---------------*/
+
+@media only screen and (max-width: 750px){
+    
+    header{
+        height: 90px;
+    }
+    
+    .headerLogo{
+        top: 10px;
+    }
+    
+    .subheader{
+        display: none;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    #menuIcon{
+        display: block;
+    }
+    
+    .firstSection{
+        margin-top: 90px;
+    }
+    
+    .date{
+        width: 95%;
+        margin-top: 30px;
+    }
+    .date_box{
+        min-height: 0px;
+    }
+
+    .ticketForm{
+        width: 300px;
+    }
+    
+    .ticketForm input, .ticketForm textarea{
+        width: 95%;
+    }
+
+    .ticketForm textarea{
+        margin: 16px 12px;
+    }
+
+    .ticketForm select{
+        width: 100%;
+    }
+
+    .ticketForm input[type=submit]{
+        float: left;
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    .copyright li{
+        font-size: 10px;
+        margin: 0px 1px;
+    }
+    footer{
+        height: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .halfBox{
+        width: 100%;
+    }
+    
+    .thirdBox{
+        width: 100%;
+        margin: 25px 0px;
+    }
+    
+    .thirdBox h2::after{
+        content: "";
+    }
+    
+    .halfGrid{
+        width: 100%;
+    }
+    
+    .speaker{
+        float: none;
+        clear: both;
+        max-width: 300px;
+        margin-top: 50px;
+        margin: 35px auto;
+    }
+    .newsletterInput{
+        overflow: auto;
+        width: 80%;
+    }
+    
+    .newsletterInput input[type=email]{
+        width: calc(100% - 130px)
+    }
+    
+    footer{
+        padding: 7%;
+        width: 86%;
+        text-align: center;
+    }
+    
+    .middle{
+        height: auto;
+    }
+    
+    .copyright{
+        position: relative;
+        margin-top: 20px;
+        bottom: 0px;
+    }
+    
+    .copyright li a{
+        font-size: 15px;
+    }
+    
+    footer .thirdBox{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 450px){
+    
+    header{
+        height: 70px;
+    }
+
+    .heroBack{
+        top: 70px;
+        height: calc( 100% - 70px );
+    }
+    
+    .headerLogo{
+        top: 7px;
+        background-size: 250px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .subheader{
+        display: none;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    #menuIcon{
+        display: block;
+    }
+    .firstSection{
+        margin-top: 70px;
+    }
+    #sideNav li:first-child{
+        margin-top: 70px;
+    }
+}
